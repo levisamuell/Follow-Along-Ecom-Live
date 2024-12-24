@@ -34,3 +34,9 @@
 1. Created a userModel.js file under models which has a userSchema which validates information like name, email and passwords.
 2. Created a userController.js file which checks if the user is already present or not by validating their unique email id and if the user is not present it proceeds with the creation of the user.
 3. We set up the multer which uploads the active/new users that in a new folder automatically, in the backend
+
+## Milestone 5- Created Front-End UI and Form Validation
+
+1. Wrote a tailwind sign-up react component
+2. Created the form validation (name, email, passowrd and file) entered by the user, and connected it to the login and sign-up page.
+3. Creted routes for the login and signup page and wrapped the app component within Browser Router.
