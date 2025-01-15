@@ -40,3 +40,11 @@
 1. Wrote a tailwind sign-up react component
 2. Created the form validation (name, email, passowrd and file) entered by the user, and connected it to the login and sign-up page.
 3. Creted routes for the login and signup page and wrapped the app component within Browser Router.
+
+## Milestone 6- Creating JWT Tokens and installing nodemailer
+
+1. We installed nodemailer to the project which helps in sending verification mails.
+2. After the validation is done, if the user doesn't exist already, we create a new user in a new endpoint.
+3. We also created a new javascript file called sendmail.js which sends the mail to the user's account.
+4. To make sure that the verification mail is sent to mail, we have use transporter.sendMail().
+5. We generated JWT (JSON web Tokens),the encrypted data which is sent by postman.

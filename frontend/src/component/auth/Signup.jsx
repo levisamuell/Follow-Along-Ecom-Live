@@ -20,7 +20,8 @@ function SignupForm() {
         console.log(data);
     };
 
-    const handleSubmit = () => {
+    const handleSubmit = (e) => {
+      e.preventDefault();
       const NameV = ValidationFormObject.validateName(data.name)
       const EmailV = ValidationFormObject.validateEmail(data.email)
       const PassV = ValidationFormObject.validatePass(data.password)
@@ -32,9 +33,10 @@ function SignupForm() {
         return setError(EmailV);
       }
       if(typeof PassV == 'string' && PassV.length > 2){
-        setError(PassV);
+        return setError(PassV);
       }
 
+      setError('');
 
     };
 
@@ -116,6 +118,7 @@ function SignupForm() {
         </div>
 
         {/* Submit Button */}
+        <p className="text-red">{error}</p>
         <button
           type="submit"
           className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"

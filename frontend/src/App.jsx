@@ -8,7 +8,7 @@ return (
 {/* <LoginPage /> */}
 {/* <SignupForm /> */}
 <Routes>
-    <Route path= "/" />
+    <Route path= "/" element={<h1>Home Page</h1>} />
     <Route path= "/signup" element={<SignupForm />} />
     <Route path= "/login" element={ <LoginPage />} />
 </Routes>
