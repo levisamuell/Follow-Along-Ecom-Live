@@ -48,3 +48,21 @@
 3. We also created a new javascript file called sendmail.js which sends the mail to the user's account.
 4. To make sure that the verification mail is sent to mail, we have use transporter.sendMail().
 5. We generated JWT (JSON web Tokens),the encrypted data which is sent by postman.
+
+## Milestone 7- Creating a Protected Route and Installing bcrypt
+1. We installed bcrypt to the project which helps in hashing the password.
+2. Created two routes signup and login
+    For Signup:
+
+    Take the data which is sent by the user.
+    If the user is already present in DB then throw error
+    If not then create a new user and encrypt their password and store it.
+    For login:
+
+    Take the data which is sent by the user.
+    If the user is present in the DB then check if the credentials are correct.
+    If the user is not present then throw an error.
+
+## Milestone 8 - Creation Of Card Component
+1. In this milestone we have created a card component.
+2. Loaded information of each card using props passes to it.
